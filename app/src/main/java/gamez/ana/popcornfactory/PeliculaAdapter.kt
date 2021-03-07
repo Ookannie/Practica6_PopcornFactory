@@ -24,7 +24,7 @@ class  PeliculaAdapter: BaseAdapter {
         var inflator = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         var vista = inflator.inflate(R.layout.pelicula, null)
         vista.id_pelicula.setImageResource(pelicula.image)
-        vista.pelicula_nombre.setText(pelicula.titulo)
+        vista.pelicula_titulo.setText(pelicula.titulo)
 
         vista.id_pelicula.setOnClickListener {
             var intent = Intent(context, DetallePelicula::class.java)

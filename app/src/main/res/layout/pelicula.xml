@@ -16,6 +16,7 @@
             android:layout_gravity="center"
             android:src="@drawable/bones"/>
         <TextView
+            android:id="@+id/pelicula_titulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="BONES"
