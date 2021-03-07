@@ -1,10 +1,10 @@
 package gamez.ana.popcornfactory
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
+import android.widget.Button
 
-import kotlinx.android.synthetic.main.pelicula.view.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,6 +12,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val button:Button = findViewById(R.id.button_get_started) as Button
+
+        button.setOnClickListener {
+            var intent: Intent = Intent(this, ListaPeliculasActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 

@@ -33,7 +33,7 @@
 
 
     <GridView
-        android:id="@+id/gridView"
+        android:id="@+id/gridview"
         android:numColumns="3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
