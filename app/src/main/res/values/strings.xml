@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">PopCornFactory</string>
+
+    <string name="titulo_bones">Bones</string>
     <string name="desc_bones">Dr. Temperance Brennan is a brilliant, but lonely, anthropologist whom is approached by an
                                 ambitious FBI agent, named Seely Booth, to help the bureau solve a series of unsolved crimes by
                                 identifying the long-dead bodies of missing persons by their bone structure. But both Agent Booth
@@ -7,11 +9,13 @@
                                 and local noncooperation.
     </string>
 
+    <string name="titulo_drhouse">Dr. House</string>
     <string name="desc_house">The series follows the life of anti-social, pain killer addict, witty and arrogant medical doctor Gregory
                                 House (Hugh Laurie) with only half a muscle in his right leg. He and his team of medical doctors try
                                 to cure complex and rare diseases from very ill ordinary people in the United States of America.
     </string>
 
+    <string name="titulo_hero">Big Hero 6</string>
     <string name="desc_hero">When a devastating event befalls the city of San Fransokyo and catapults Hiro into the
                                 midst of danger, he turns to Baymax and his close friends adrenaline junkie Go Go
                                 Tomago, neatnik Wasabi, chemistry whiz Honey Lemon and fanboy Fred. Determined to
@@ -19,11 +23,13 @@
                                 Big Hero 6.
     </string>
 
+    <string name="titulo_who">Dr. Who</string>
     <string name="desc_who">The series follows the life of anti-social, pain killer addict, witty and arrogant medical doctor Gregory
                             House (Hugh Laurie) with only half a muscle in his right leg. He and his team of medical doctors try
                             to cure complex and rare diseases from very ill ordinary people in the United States of America.
     </string>
 
+    <string name="titulo_friends">Friends</string>
     <string name="desc_friends">Rachel Green, Ross Geller, Monica Geller, Joey Tribbiani, Chandler Bing and Phoebe Buffay are
                                 six 20 something year-olds, living off of one another in the heart of New York City. Over the course
                                 of ten years, this average group of buddies goes through massive mayhem, family trouble, past and
@@ -31,6 +37,7 @@
                                 friend.
     </string>
 
+    <string name="titulo_inception">Inception</string>
     <string name="desc_inception">Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing
                                     valuable secrets from deep within the subconscious during the dream state, when the
                                     mind is at its most vulnerable. Cobbs rare ability has made him a coveted player in this
@@ -44,12 +51,14 @@
                                     Cobb could have seen coming.
     </string>
 
+    <string name="titulo_leap">Leap Year</string>
     <string name="desc_leap">A woman who has an elaborate scheme to propose to her boyfriend on Leap Day, an Irish
                             tradition which occurs every time the date February 29 rolls around, faces a major setback
                             when bad weather threatens to derail her planned trip to Dublin. With the help of an
                             innkeeper, however, her cross-country odyssey just might result in her getting engaged.
     </string>
 
+    <string name="titulo_toy">Toy Story</string>
     <string name="desc_toy">Toy Story is about the;secret life of toys; when people are not around. When Buzz
                             Lightyear, a space-ranger, takes Woodys place as Andys favorite toy, Woody doesnt like
                             the situation and gets into a fight with Buzz. Accidentaly Buzz falls out the window and
@@ -58,6 +67,7 @@
                             get into all kind of trouble while trying to get home.
     </string>
 
+    <string name="titulo_small">Smallville</string>
     <string name="desc_small">The numerous miraculous rescues by the local wonder boy Clark have aroused suspicions amongst
                                 colonials of Smallville. Interestingly, the boy has managed to downplay his acts of various heroic
                                 egresses in the past. They say hes either too fast or has a penchant for finding trouble. He was
