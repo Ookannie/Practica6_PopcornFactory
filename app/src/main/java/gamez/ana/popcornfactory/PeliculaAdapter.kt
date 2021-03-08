@@ -28,7 +28,7 @@ class  PeliculaAdapter: BaseAdapter {
 
         vista.id_pelicula.setOnClickListener {
             var intent = Intent(context, DetallePelicula::class.java)
-            intent.putExtra("titulo", pelicula.titulo)
+            intent.putExtra("nombre", pelicula.titulo)
             intent.putExtra("image", pelicula.image)
             intent.putExtra("header", pelicula.header)
             intent.putExtra("sinopsis", pelicula.sinopsis)
