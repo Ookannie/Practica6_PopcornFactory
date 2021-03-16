@@ -28,7 +28,7 @@ class DetallePelicula : AppCompatActivity() {
         }
 
         if(ns == 0){
-            buyTickets.isActivated = false
+            buyTickets.isEnabled = false
         }else{
             buyTickets.setOnClickListener {
                 val intent: Intent = Intent(this, SeatSelection::class.java)
