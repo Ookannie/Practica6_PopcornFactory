@@ -37,7 +37,7 @@ class DetallePelicula : AppCompatActivity() {
                 val intent: Intent = Intent(this, SeatSelection::class.java)
                 intent.putExtra("id", id)
                 intent.putExtra("name", title)
-                intent.putExtra("seatsAvailable", randomSeats)
+                intent.putExtra("seats", randomSeats)
                 this.startActivity(intent)
 
             }

@@ -2,10 +2,9 @@ package gamez.ana.popcornfactory
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.RadioGroup
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
+import java.util.*
+import kotlin.collections.ArrayList
 
 class SeatSelection : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,10 +15,15 @@ class SeatSelection : AppCompatActivity() {
         var posMovie = -1
 
         val bundle = intent.extras
+        var seats = 0
+        var movie: String = ""
+
 
         if(bundle != null){
             title.setText(bundle.getString("name"))
+            movie = bundle.getString("name")!!
             posMovie = bundle.getInt("id")
+            seats = bundle.getInt("seats")
         }
 
         val confirm : Button = findViewById(R.id.confirm)
@@ -80,6 +84,31 @@ class SeatSelection : AppCompatActivity() {
             }
         }
 
+        disableButtons(seats)
+
+    }
+
+    fun disableButtons(seatsav: Int){
+        var seats: ArrayList<Int> = ArrayList<Int>()
+
+        for(i in 0 until seatsav){
+            seats.add(1)
+        }
+
+        for (i in seatsav until 20){
+            seats.add(0)
+        }
+
+        Collections.shuffle(seats)
+
+        for(i in 0 until 20){
+            if(seats.get(i)==0){
+                var radioId: String = "seat" + (i+1)
+                var resID: Int = resources.getIdentifier(radioId, "id", packageName)
+                var radio: RadioButton = findViewById(resID)
+                radio.isEnabled  = false
+            }
+        }
 
     }
 }

@@ -29,7 +29,6 @@ class  PeliculaAdapter: BaseAdapter {
 
         vista.id_pelicula.setOnClickListener {
             var seatsAvailable = 20-pelicula.seats.size
-            Log.d("SEATS", "$seatsAvailable")
             var intent = Intent(context, DetallePelicula::class.java)
             intent.putExtra("nombre", pelicula.titulo)
             intent.putExtra("image", pelicula.image)
