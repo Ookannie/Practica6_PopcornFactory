@@ -1,5 +1,6 @@
 package gamez.ana.popcornfactory
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
@@ -29,9 +30,11 @@ class SeatSelection : AppCompatActivity() {
         val confirm : Button = findViewById(R.id.confirm)
 
         confirm.setOnClickListener {
-            //todo añadir reservar el lugar seleccionado por el usuario
-            //hacer una nueva actividad donde se vea el resumen de la compra
-            //se agregue el nombre del cliente y se vea el asiento que reservó
+            var seatSelected = seatSelection()
+            val intent: Intent = Intent(this, ReservacionActivity::class.java)
+            intent.putExtra("seat", seatSelected)
+            intent.putExtra("movie", movie)
+            startActivity(intent)
             Toast.makeText(this, "Enjoy the movie", Toast.LENGTH_LONG).show()
         }
         
@@ -110,5 +113,20 @@ class SeatSelection : AppCompatActivity() {
             }
         }
 
+    }
+
+    fun seatSelection(): Int{
+        var seat = 0
+
+        for(i in 0 until 20){
+            var radioId: String ="seat" + (i+1)
+            var resID: Int = resources.getIdentifier(radioId, "id", packageName)
+            var radio: RadioButton = findViewById(resID)
+
+            if(radio.isChecked){
+                seat = i+1
+            }
+        }
+        return seat
     }
 }
